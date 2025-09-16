@@ -6,7 +6,7 @@ import JournalIcon from "../../assets/JournalIcon.png";
 
 const Navigation: React.FC = () => {
   return (
-    <div className="mx-auto w-[100%] h-[12%] bg-[#ffffff] flex items-center justify-between px-10">
+    <div className="mx-auto w-[100%] h-[12%] bg-gradient-to-b from-purple-300 to-white flex items-center justify-between px-10">
       <Link
         to="/layout/chat"
         className="hover:bg-purple-200 w-[50px] h-[50px] rounded-md flex justify-center items-center"

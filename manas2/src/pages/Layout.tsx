@@ -6,11 +6,10 @@ import Navigation from '../components/Navigation/Navigation'
 
 const Layout: React.FC= () => {
   return (
-    <div>
+    <div className='w-[320px] h-screen mx-auto border-2 flex flex-col '>
       <Header/>
       <Outlet/>
       <Navigation/>
-
     </div>
   )
 }

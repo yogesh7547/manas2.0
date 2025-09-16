@@ -7,12 +7,14 @@ import Layout from './pages/Layout';
 import Chat from './pages/Chat';
 import Journal from './pages/Journal';
 import Profile from './pages/Profile';
+import { AuthProvider } from './contexts/authContext';
 
 
 import React from 'react'
 
 const App:React.FC = () => {
   return (
+    <AuthProvider>
     <BrowserRouter>
     <Routes>
       {/* Top-level routes */}
@@ -30,6 +32,7 @@ const App:React.FC = () => {
 
     </Routes>
     </BrowserRouter>
+    </AuthProvider>
   );
 }
 
